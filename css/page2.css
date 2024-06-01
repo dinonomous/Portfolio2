@@ -1,0 +1,49 @@
+.page_2_parent{
+    overflow-x: hidden;
+}
+.page_2{
+    position: relative;
+    width: 200vw;
+    display: flex;
+    flex-direction: column;
+}
+.page2{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    left: 50%;
+    padding: 0rem 1rem 1rem 1rem;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.page_2_text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.page_2_text h4::before{
+    content: "•"; /* Unicode character for the dot */
+  color: rgb(255, 255, 255); /* Color of the dot */
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.1em;
+  font-size: 1.2em;
+  line-height: 1;
+}
+.page_2_text h4{
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.page_2_image{
+    width: 40%;
+    height: 100%;
+}

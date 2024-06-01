@@ -1,0 +1,224 @@
+.page1{
+  padding: 1rem 1rem 0rem 1rem;
+  height: fit-content;
+  width: 100vw;
+  color: var(--white);
+}
+.patterns_circle{
+  position: absolute;
+  top: 15%;
+  left: -30%;
+  z-index: 0;
+}
+.topnav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  justify-items: center;
+  gap: 1rem;
+}
+.topnav img{
+  height: 2.5rem;
+  position: relative;
+  left: -70%;
+}
+.topline{
+  position: relative;
+  right: 70%;
+}
+.page1_above{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 58vh;
+  position: relative;
+}
+.page1_above_photo{
+  position: relative;
+}
+.page1_above_photo_dinesh_photo{
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  z-index: 1;
+}
+.mask1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+  -webkit-mask-image: url('../assets/mask.svg'); /* For WebKit-based browsers */
+  mask-image: url('../assets/mask.svg'); /* Standard property */
+  background-color: #5E0B15;
+  mask-repeat: no-repeat;
+  z-index: 1;
+  transition-duration: 200ms;
+  transition-timing-function:ease-out;
+  transition-delay: 1ms;
+}
+
+.cursor_pointer {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition-duration: 80ms;
+  transition-timing-function:ease-out;
+  font-size: 1rem;
+  font-family: "Baumans", system-ui;
+  line-height: 1px;
+  background-color: #ffffff00;
+  backdrop-filter: invert(1);
+}
+
+.page1_above_photo_mask{
+  content: "";
+  width: 20rem;
+  height: 20rem;
+}
+.page1_above_mask{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  position: relative;
+  height: 100%;
+}
+.mask_text{
+  margin-top: 0.89rem;
+  margin-left: -20rem;
+}
+.page1_text{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0rem 2rem;
+  z-index: 1;
+}
+
+.circle_text{
+  left: -20%;
+  top: -25%;
+}
+.circles{
+  height: 12rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 0 !important;
+}
+.page1_bellow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: fit-content;
+  width: 50%;
+  padding: 0rem 1rem 1rem 1rem;
+}
+.line {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Ensures the image spans the entire width of its container */
+}
+
+.line img {
+  display: block; /* Ensures the image is displayed as a block element */
+  width: 100%; /* Makes sure the image takes up the full width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  object-fit: contain; /* Scales the image while preserving its aspect ratio */
+  object-position: center; /* Centers the image horizontally */
+  padding-bottom: 1rem;
+}
+
+.project{
+  background-color: #5941A9;
+  flex-grow: 0.5;
+  height: 42%;
+  color: var(--black);
+}
+.project h1{
+  margin-left: 1rem;
+}
+.skills{
+  background-color: #F4E04D;
+  flex-grow: 0.25;
+  height: 42%;
+  color: var(--black)
+}
+.skills h1{
+  margin-left: 1rem;
+  position: relative;
+  z-index: 1 !important;
+}
+
+.page1_bellow_right{
+  flex-grow: 0.25;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.certifications{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5D4ED;
+  height: 50%;
+  width: 100%;
+  color: var(--black);
+}
+.resume{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #5E0B15;
+  height: 50%;
+  width: 100%;
+  color: var(--white);
+}
+.containerline{
+  background-color: black !important;
+  width: 20% !important;
+
+}
+.container_bottom{
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  left: -1rem;
+  z-index: 1;
+}
+.container{
+  z-index: 2;
+  cursor: none;
+}
+.container h1{
+  position: relative;
+  z-index: 1 !important;
+  height: calc(42vh - 6rem);
+}
