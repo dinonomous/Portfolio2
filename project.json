@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "Name": "SRMLaunchpad",
+            "backgroundImage": "https://random.imagecdn.app/500/150",
+            "skills": ["React", "Node", "HTML"],
+            "Description": "A comprehensive launchpad for managing projects with React and Node.",
+            "github": "https://github.com/user/SRMLaunchpad",
+            "link": "https://srmlaunchpad.example.com"
+        },
+        {
+            "Name": "WeatherApp",
+            "backgroundImage": "https://random.imagecdn.app/501/150",
+            "skills": ["JavaScript", "CSS", "HTML"],
+            "Description": "A weather forecasting application that provides real-time weather updates.",
+            "github": "https://github.com/user/WeatherApp",
+            "link": "https://weatherapp.example.com"
+        },
+        {
+            "Name": "PortfolioWebsite",
+            "backgroundImage": "https://random.imagecdn.app/502/150",
+            "skills": ["React", "CSS", "HTML"],
+            "Description": "A personal portfolio website to showcase projects and skills.",
+            "github": "https://github.com/user/PortfolioWebsite",
+            "link": "https://portfolio.example.com"
+        },
+        {
+            "Name": "EcommercePlatform",
+            "backgroundImage": "https://random.imagecdn.app/503/150",
+            "skills": ["Vue", "Node", "HTML"],
+            "Description": "A full-fledged ecommerce platform built with Vue and Node.",
+            "github": "https://github.com/user/EcommercePlatform",
+            "link": "https://ecommerceplatform.example.com"
+        }
+    ]
+}

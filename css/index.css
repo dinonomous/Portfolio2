@@ -1,28 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Bebas+Neue&display=swap');
-:root {
-  background-color: #02020B;
-  --black: #02020B;
-  --white: #E5D4ED;
+@import url("https://fonts.googleapis.com/css2?family=Baumans&family=Bebas+Neue&display=swap");
+#root {
+  background-color: #02020b;
+  --backGroundColour: #02020b;
+  --black: #02020b;
+  --white: #e5d4ed;
+  --height: 57vh;
+  --side: 300px;
+  --widthArray: calc(var(--side) + var(--side));
 }
-*{
+* {
   font-family: Bebas Neue;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.cursour_pointer{
-  background-color: #E5D4ED;
+.cursour_pointer {
+  background-color: #e5d4ed;
   border-radius: 50%;
   height: 10px;
   width: 10px;
   position: fixed;
-}
-.cursour_follow{
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  position: fixed;
-  border: 1px solid #E5D4ED;
 }
 .horizontal-line {
   width: 100%;
@@ -30,31 +27,40 @@
   background-color: var(--white);
   border-radius: 1.5px;
 }
-
-
+.line::before {
+  content: "";
+  background-repeat: repeat-x;
+  height: 60px;
+  width: 100%;
+  background-size: contain;
+  background-image: url('../assets/curve_line.svg');
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 h1 {
   font-size: 6rem;
   z-index: 1;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
-h2{
+h2 {
   font-size: 3rem;
   font-family: "Baumans", system-ui;
   z-index: 1;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
-h3{
+h3 {
   font-size: 2.5rem;
   z-index: 1;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
-h4{
+h4 {
   font-family: "Baumans", system-ui;
   font-size: 1.5rem;
   z-index: 1;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
-.container{
+.custom-container {
   border-radius: 3rem;
   padding: 1rem;
   position: relative;

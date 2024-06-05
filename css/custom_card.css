@@ -1,0 +1,5 @@
+.custom_card{
+    height: 100%;
+    width: 33%;
+    background-color: var(--backGroundColour);
+}

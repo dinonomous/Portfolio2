@@ -35,28 +35,24 @@ tl.from(".telegram", {
   duration: 0.3,
 });
 
-// Function to remove the mask at 50% progress
-function removeMaskAtHalfway(self) {
-  if (self.progress >= 0.5) {
-    self.maskRemoved = true;
-    mask.style.setProperty("display", "none", "important");
-    mask = null;
-    console.log("half way")
-  }
-}
 
-// Create a new GSAP timeline with ScrollTrigger
 const tb = gsap.timeline({
   scrollTrigger: {
     trigger: ".page_2_parent",
     scroller: "body",
     markers: true,
-    start: "top 59.9%",
+    start: `top cal(57% + 6rem)`,
     end: "top 30%",
     pin: ".page1page2parent",
     scrub: 2,
     onUpdate: self => {
-      removeMaskAtHalfway(self);
+      const progress = self.progress;
+      if(progress === 1){
+        animation = false;
+      }
+      else{
+        animation = true;
+      }
     }
   }
 });
