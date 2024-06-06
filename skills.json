@@ -1,0 +1,34 @@
+{
+    "skills": [
+        {
+            "title": "Web Developer MERN",
+            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "percentage": 80
+        },
+        {
+            "title": "Cloud Arcitect",
+            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "percentage": 80
+        },
+        {
+            "title": "C and C++",
+            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "percentage": 80
+        },
+        {
+            "title": "Python & Django",
+            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "percentage": 80
+        },
+        {
+            "title": "Java Script",
+            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "percentage": 80
+        },
+        {
+            "title": "AI and ML",
+            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "percentage": 80
+        }
+    ]
+}

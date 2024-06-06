@@ -4,9 +4,13 @@
   --backGroundColour: #02020b;
   --black: #02020b;
   --white: #e5d4ed;
+  --red: #5E0B15;
+  --yellow: #F4E04D;
+  --blue: #5941A9;
   --height: 57vh;
   --side: 300px;
   --widthArray: calc(var(--side) + var(--side));
+  position: relative;
 }
 * {
   font-family: Bebas Neue;
@@ -38,6 +42,29 @@
   top: 0px;
   left: 0px;
 }
+.line2::before {
+  content: "";
+  background-repeat: repeat-x;
+  height: 60px;
+  width: 100%;
+  background-size: contain;
+  background-image: url('../assets/curve_line1.svg');
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.line3::after {
+  content: "";
+  background-repeat: repeat-x;
+  height: 60px;
+  width: 100%;
+  background-size: contain;
+  background-image: url('../assets/curve_line2.svg');
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 h1 {
   font-size: 6rem;
   z-index: 1;

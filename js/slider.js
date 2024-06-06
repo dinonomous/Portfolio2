@@ -15,7 +15,6 @@ var mainProjectTextArea = document.querySelector(".project_textarea");
 fetch("project.json")
   .then((response) => response.json())
   .then((projectData) => {
-    console.log("fetched");
     projects = projectData.projects;
     projectData.projects.forEach((project, index) => {
       const div = document.createElement("div");
@@ -23,7 +22,6 @@ fetch("project.json")
       div.id = `card-${index}`;
       div.style.backgroundImage = `url(${project.backgroundImage})`;
       array.appendChild(div);
-
       div.addEventListener("click", () => {
         currentSeleted = index;
         main.style.backgroundImage = `url(${projects[currentSeleted].backgroundImage})`;

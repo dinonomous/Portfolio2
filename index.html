@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/page2.css" />
     <link rel="stylesheet" href="./css/page_3.css" />
+    <link rel="stylesheet" href="./css/page_4.css" />
     <link rel="stylesheet" href="./css/custom_card.css" />
   </head>
   <body>
@@ -184,32 +185,47 @@
           </div>
         </div>
       </div>
-
       <div class="page_3">
-        <div class="line" style="top: 0;height: 10px;"></div>
-        <div class="container" style="height: 80%; display: flex; align-items: center;">
-          <button class="button_project_card prev" onclick="scrollPrev()">&lt</button>
-          <div class="main_project" onmouseenter="mainMouseEnter()" onmouseleave="mainMouseLeave()">
-              <div class="project_textarea">
-                  <span class="Projectname"></span>
-                  <span class="Project_skills"></span>
-                  <span class="project_despription"></span>
-                  <div class="button_space">
-                      <button class="button_project project_github">Github</button>
-                      <button class="button_project project_link">Link</button>
-                  </div>
+        <div class="line" style="top: 0; height: 10px"></div>
+        <div
+          class="container"
+          style="height: 80%; display: flex; align-items: center"
+        >
+          <button class="button_project_card prev" onclick="scrollPrev()">
+            &lt
+          </button>
+          <div
+            class="main_project"
+            onmouseenter="mainMouseEnter()"
+            onmouseleave="mainMouseLeave()"
+          >
+            <div class="project_textarea">
+              <span class="Projectname"></span>
+              <span class="Project_skills"></span>
+              <span class="project_despription"></span>
+              <div class="button_space">
+                <button class="button_project project_github">Github</button>
+                <button class="button_project project_link">Link</button>
               </div>
-          </div>
-          <div class="card_array_parent">
-            <div class="card_array">
             </div>
           </div>
-          <button class="button_project_card next" onclick="scrollNext()">&gt</button>
+          <div class="card_array_parent">
+            <div class="card_array"></div>
+          </div>
+          <button class="button_project_card next" onclick="scrollNext()">
+            &gt
+          </button>
+        </div>
+      </div>
+
+      <div class="page_4">
+        <div class="line2" style="top: 0; height: 40px"></div>
+        <div class="container skill_card_parent" style="height: 80%; display: flex; align-items: center;justify-content: center;flex-wrap:wrap;gap: 3%;">
         </div>
       </div>
     </div>
     <script src="./js/slider.js"></script>
-
+    <script src="./js/skills.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

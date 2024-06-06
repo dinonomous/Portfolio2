@@ -1,5 +1,6 @@
 .page_2_parent{
     overflow-x: hidden;
+    margin-top: -0.5rem;
 }
 .page_2{
     position: relative;
