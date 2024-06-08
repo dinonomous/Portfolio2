@@ -87,6 +87,9 @@ h4 {
   z-index: 1;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
+p {
+  font-family: "Baumans", system-ui;
+}
 .custom-container {
   border-radius: 3rem;
   padding: 1rem;

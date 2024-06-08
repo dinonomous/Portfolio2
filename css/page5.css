@@ -1,10 +1,67 @@
-.page5{
-    position: relative;
-    min-height: 100vh;
-    height: fit-content;
-    width: 100%;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.page5 {
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  --bs-card-spacer-y: 0rem;
+  --bs-card-spacer-x: 0rem;
+  --bs-card-title-spacer-y: 1rem;
+  --bs-card-title-color: ;
+  --bs-card-subtitle-color: ;
+  --bs-card-border-width: var(--bs-border-width);
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  );
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
+  padding: 1rem;
+}
+.card-body {
+  padding-top: 1rem;
+}
+.card-body h5 {
+  font-size: 2rem;
+}
+.card-body p {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+.caertificates_parent {
+
+}
+
+.certificate_group {
+  display: flex; /* Override Bootstrap grid */
+  flex-wrap: nowrap; /* Optional to prevent line breaks */
+  align-items: center;
+  justify-content: center;
+  gap: inherit;
+  width: 100% !important;
 }
