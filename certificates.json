@@ -1,0 +1,44 @@
+{
+  "jsonData": [
+    {
+      "group": "group1",
+      "certificates": [
+        {
+          "imgSrc": "https://picsum.photos/501/401",
+          "title": "Certificate Title 1",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "imgSrc": "https://picsum.photos/501/401",
+          "title": "Certificate Title 2",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "imgSrc": "https://picsum.photos/501/401",
+          "title": "Certificate Title 3",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        }
+      ]
+    },
+    {
+      "group": "group2",
+      "certificates": [
+        {
+          "imgSrc": "https://picsum.photos/500/400",
+          "title": "Certificate Title 4",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "imgSrc": "https://picsum.photos/500/400",
+          "title": "Certificate Title 5",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        },
+        {
+          "imgSrc": "https://picsum.photos/500/400",
+          "title": "Certificate Title 6",
+          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        }
+      ]
+    }
+  ]
+}
