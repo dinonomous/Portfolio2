@@ -91,8 +91,13 @@ function maskShrink() {
     mask.setAttribute("style", `mask-size: ${masksize}px !important;`);
 }
 
-function divein(){
-    cursor.innerHTML="Dive";
+function divein(e){
+    if(e){
+        cursor.innerHTML=`${e}`;
+    }
+    else{
+        cursor.innerHTML='';
+    }
     gsap.to(cursor,{
         width: "70px",
         height: "70px",

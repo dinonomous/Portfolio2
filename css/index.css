@@ -64,6 +64,17 @@
   top: 0px;
   left: 0px;
 }
+.line4::after {
+  content: "";
+  background-repeat: repeat-x;
+  height: 60px;
+  width: 100%;
+  background-size: contain;
+  background-image: url('../assets/curve_line3.svg');
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 
 h1 {
   font-size: 6rem;
