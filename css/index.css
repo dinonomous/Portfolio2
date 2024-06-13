@@ -123,5 +123,45 @@ p {
   height: 100vh;
   width: 100vw;
   position: fixed;
+  flex-direction: column;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prloader > img{
+  width: 15%;
+}
+.prloader > h1{
+  color: #e5d4ed;
+  font-size: 3rem;
+  position: relative;
+  bottom: -3rem;
+}
+.prloader-button{
+  background-color: #5941A9;
+  border: 2px solid var(--yellow);
+  height: 3rem;
+  width: 6rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 2rem;
+  opacity: 0;
+}
+.music{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #02020b;
+  height: 4rem;
+  width: 4rem;
+  border: 5px solid #F4E04D;
+  object-fit: contain;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 8;
 }

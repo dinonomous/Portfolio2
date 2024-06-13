@@ -60,9 +60,8 @@ function maskShrink() {
 function divein(e) {
     cursor.innerHTML = e ? `${e}` : '';
     gsap.to(cursor, {
-        width: "70px",
-        height: "70px",
-        backgroundColor: "#ffffff00",
+        width: "80px",
+        height: "80px",
         border: "1px solid black"
     });
 }
@@ -72,6 +71,5 @@ function diveout() {
     gsap.to(cursor, {
         width: "10px",
         height: "10px",
-        backgroundColor: "#ffffff00"
     });
 }

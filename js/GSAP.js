@@ -6,40 +6,47 @@ const page7Animate = document.querySelector('#page7')
 
 
 var tl = gsap.timeline();
-tl.from(".page1_text h1", {
-  x: "-10%",
-  opacity: 0,
-  duration: 0.5,
-});
-tl.from(".page1_above_photo_dinesh_photo", {
-  x: "10%",
-  opacity: 0,
-  duration: 0.5,
-});
-tl.from(".topline", {
-  x: "-50%",
-  duration: 0.5,
-});
-tl.from(".github", {
-  x: 10,
-  opacity: 0,
-  duration: 0.3,
-});
-tl.from(".insta", {
-  x: 10,
-  opacity: 0,
-  duration: 0.3,
-});
-tl.from(".linkedin", {
-  x: 10,
-  opacity: 0,
-  duration: 0.3,
-});
-tl.from(".telegram", {
-  x: 10,
-  opacity: 0,
-  duration: 0.3,
-});
+function slideprloader(){
+  tl.to(loader,{
+      y: '-100%'
+  })
+  playpause(musicBack)
+  tl.from(".page1_text h1", {
+    x: "-10%",
+    opacity: 0,
+    duration: 0.5,
+  });
+  tl.from(".page1_above_photo_dinesh_photo", {
+    x: "10%",
+    opacity: 0,
+    duration: 0.5,
+  });
+  tl.from(".topline", {
+    x: "-50%",
+    duration: 0.5,
+  });
+  tl.from(".github", {
+    x: 10,
+    opacity: 0,
+    duration: 0.3,
+  });
+  tl.from(".insta", {
+    x: 10,
+    opacity: 0,
+    duration: 0.3,
+  });
+  tl.from(".linkedin", {
+    x: 10,
+    opacity: 0,
+    duration: 0.3,
+  });
+  tl.from(".telegram", {
+    x: 10,
+    opacity: 0,
+    duration: 0.3,
+  });
+}
+
 
 let amountScrolled = 0;
 
@@ -50,8 +57,9 @@ const tb = gsap.timeline({
     markers: false,
     start: "top calc(57% + 6rem)",
     end: "top 30%",
+    snap: 1,
     pin: ".page1page2parent",
-    scrub: 1,
+    scrub: 2,
     onUpdate: self => {
       const progress = self.progress;
       amountScrolled = self.scroll();

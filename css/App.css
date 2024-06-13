@@ -22,12 +22,15 @@
   justify-content: start;
   justify-items: center;
   gap: 1rem;
+  z-index: 8;
 }
-.topnav img{
+.topnav a{
   height: 2.5rem;
   position: relative;
   left: -70%;
-  
+}
+.topnav img{
+  height: 2.5rem;
 }
 .topline{
   position: relative;
@@ -86,7 +89,7 @@
 .cursor_pointer {
   width: 10px;
   height: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.73) !important;
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -99,9 +102,9 @@
   transition-duration: 80ms;
   transition-timing-function:ease-out;
   font-size: 1rem;
+  font-weight: bold;
   font-family: "Baumans", system-ui;
   line-height: 1px;
-  background-color: #ffffff00;
   backdrop-filter: invert(1);
 }
 

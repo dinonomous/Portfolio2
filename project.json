@@ -2,7 +2,7 @@
     "projects": [
         {
             "Name": "SRMLaunchpad",
-            "backgroundImage": "https://random.imagecdn.app/500/150",
+            "backgroundImage": "./assets/images/projects/SRMLaunchPad.mp4",
             "skills": ["React", "Node", "HTML"],
             "Description": "A comprehensive launchpad for managing projects with React and Node.",
             "github": "https://github.com/user/SRMLaunchpad",
