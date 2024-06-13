@@ -1,84 +1,50 @@
 const cursor = document.querySelector(".cursor_pointer");
+const mask = document.querySelector(".mask1");
 const mask2 = document.querySelector(".mask");
 const rootElement = document.getElementById('root');
 const styles = getComputedStyle(rootElement);
-const height = styles.getPropertyValue('--height');
+const parsedHeight = parseInt(styles.getPropertyValue('--height'));
 const side = parseInt(styles.getPropertyValue("--side"));
-const parsedHeight = parseInt(height);
-var scrollAmount = 0;
-var scrollAmount1 = 0;
-var Yaxis = 0;
-const mask = document.querySelector(".mask1");
-var animation = true;
+let scrollAmount = 0;
+let scrollAmount1 = 0;
+let lastScrollTop = 0;
+let cursorTop = 0;
+let cursorLeft = 0;
+let masksize = 40;
+let animation = true;
 
-var masksize = 40;
+// document.addEventListener("scroll", () => {
+//     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-document.addEventListener("scroll", e => {
-    scrollAmount = window.pageYOffset;
-    const cursorTop = cursor.getBoundingClientRect().top;
-    cursorTop += scrollAmount;
+//     cursorTop += scrollTop - lastScrollTop;
+//     cursor.style.transform = `translate(${cursorLeft}px, ${cursorTop}px)`;
+
+//     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+// });
+
+document.addEventListener("mousemove", e => {
     gsap.to(cursor, {
-        y: cursorTop,
+        x: e.pageX,
+        y: e.pageY - window.pageYOffset + 'px',
         ease: "elastic.out(1,0.3)",
         duration: 1,
     });
-    if (animation) {
-        scrollAmount1 = scrollAmount;
-    }
-});
 
-
-document.addEventListener("mousemove", e => {
-    Yaxis = e.pageY;
-
-    const maskRect = mask2.getBoundingClientRect();
-  const maskX = maskRect.left;
-  const maskY = maskRect.top;
-  const maskWidth = maskRect.width;
-  const maskHeight = maskRect.height;
-
-  // Check if mouse is inside mask2 (assuming it's fully contained within mask1)
-  const isInsideMask = e.pageX >= maskX && e.pageX <= maskX + maskWidth &&
-                       e.pageY >= maskY && e.pageY <= maskY + maskHeight + scrollAmount;
-
-    gsap.to(cursor,{
-        x:e.pageX,
-        y:Yaxis,
-        ease: "elastic.out(1,0.3)",
-        duration: 1,
-    })
-    gsap.to(mask,{
+    gsap.to(mask, {
         ease: "elastic.out(1,0.3)",
         duration: 200,
-        delay:7000, 
-        maskPosition: `${e.pageX - masksize / 2}px ${e.pageY - masksize / 2}px;`,
+        delay: 7000,
         maskSize: masksize,
         webkitMaskSize: masksize,
-        autoAlpha: 1, 
+        autoAlpha: 1,
         maskPosition: 'center'
-    })
-    if (isInsideMask) {
-        gsap.to(mask2, {
-            ease: "elastic.out(1,0.3)",
-            duration: 200,
-            delay: 7000,
-            maskPosition: `${e.pageX - masksize / 2}px ${e.pageY - masksize / 2}px`,
-            maskSize: masksize,
-            webkitMaskSize: masksize,
-            autoAlpha: 1,
-            maskPosition: 'center'
-        });
-        mask2.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - maskX - masksize / 2}px ${e.pageY - maskY - scrollAmount - masksize / 2}px;`);
-  }
-  if(animation){
-    mask.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - masksize / 2}px ${e.pageY - scrollAmount - masksize / 2}px;`);
-  }
-  else{
-    
-    mask.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - masksize / 2}px ${e.pageY - scrollAmount1 - masksize / 2}px;`);
-  }
-    
-    
+    });
+
+    if (animation) {
+        mask.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - masksize / 2}px ${(e.pageY - scrollAmount - masksize / 2)-amountScrolled}px;`);
+    } else {
+        mask.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - masksize / 2}px ${(e.pageY - scrollAmount - masksize / 2)-amountScrolled}px;`);
+    }
 });
 
 function maskExpand() {
@@ -91,26 +57,21 @@ function maskShrink() {
     mask.setAttribute("style", `mask-size: ${masksize}px !important;`);
 }
 
-function divein(e){
-    if(e){
-        cursor.innerHTML=`${e}`;
-    }
-    else{
-        cursor.innerHTML='';
-    }
-    gsap.to(cursor,{
+function divein(e) {
+    cursor.innerHTML = e ? `${e}` : '';
+    gsap.to(cursor, {
         width: "70px",
         height: "70px",
         backgroundColor: "#ffffff00",
-        border:"1px solid black"
-    })
+        border: "1px solid black"
+    });
 }
 
-function diveout(){
-    cursor.innerHTML="";
-    gsap.to(cursor,{
+function diveout() {
+    cursor.innerHTML = "";
+    gsap.to(cursor, {
         width: "10px",
         height: "10px",
         backgroundColor: "#ffffff00"
-    })
+    });
 }

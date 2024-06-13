@@ -1,4 +1,10 @@
-// Initial animations for elements on page load
+const page3Animate = document.querySelector('#page3')
+const page4Animate = document.querySelector('#page4')
+const page5Animate = document.querySelector('#page5')
+const page6Animate = document.querySelector('#page6')
+const page7Animate = document.querySelector('#page7')
+
+
 var tl = gsap.timeline();
 tl.from(".page1_text h1", {
   x: "-10%",
@@ -35,32 +41,93 @@ tl.from(".telegram", {
   duration: 0.3,
 });
 
+let amountScrolled = 0;
 
 const tb = gsap.timeline({
   scrollTrigger: {
     trigger: ".page_2_parent",
     scroller: "body",
-    markers: true,
-    start: `top cal(57% + 6rem)`,
+    markers: false,
+    start: "top calc(57% + 6rem)",
     end: "top 30%",
     pin: ".page1page2parent",
-    scrub: 2,
+    scrub: 1,
     onUpdate: self => {
       const progress = self.progress;
-      if(progress === 1){
+      amountScrolled = self.scroll();
+      console.log('Amount Scrolled:', amountScrolled);
+
+      if (progress === 1) {
         animation = false;
-      }
-      else{
+      } else {
         animation = true;
       }
     }
   }
 });
 
+
 tb.to(".page_2", {
   x: "-50%",
 })
 .call(() => {
   console.log("Animation complete!");
-}); // Example of calling a function after animations
+});
+
+gsap.from(page3Animate, {
+  scrollTrigger: {
+    trigger: '.page_3',
+    start: 'top 70%',
+    end: 'top 60%',
+    duration: 1
+  },
+  opacity: 0,
+  scale: 0.9,
+  duration: 1 // You can specify the duration of the animation
+});
+gsap.from(page4Animate, {
+  scrollTrigger: {
+    trigger: '.page_4',
+    start: 'top 70%',
+    end: 'top 60%',
+    duration: 1
+  },
+  opacity: 0,
+  scale: 0.9,
+  duration: 1 // You can specify the duration of the animation
+});
+gsap.from(page5Animate, {
+  scrollTrigger: {
+    trigger: '.page5',
+    start: 'top 70%',
+    end: 'top 60%',
+    duration: 1
+  },
+  opacity: 0,
+  scale: 0.9,
+  duration: 1 // You can specify the duration of the animation
+});
+gsap.from(page6Animate, {
+  scrollTrigger: {
+    trigger: '.page_6',
+    start: 'top 70%',
+    end: 'top 60%',
+    duration: 1
+  },
+  opacity: 0,
+  scale: 0.9,
+  duration: 1 // You can specify the duration of the animation
+});
+gsap.from(page7Animate, {
+  scrollTrigger: {
+    trigger: '.page_7',
+    start: 'top 70%',
+    end: 'top 60%',
+    duration: 1
+  },
+  opacity: 0,
+  scale: 0.9,
+  duration: 1 // You can specify the duration of the animation
+});
+
 

@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="./css/page_3.css" />
     <link rel="stylesheet" href="./css/page_4.css" />
     <link rel="stylesheet" href="./css/page_6.css" />
+    <link rel="stylesheet" href="./css/page_7.css" />
     <link rel="stylesheet" href="./css/custom_card.css" />
   </head>
   <body>
     <div id="root">
+      <div class="prloader"><img src="./assets/3-dots-bounce.svg" alt="" srcset=""></div>
       <div class="cursor_pointer"></div>
       <div class="page1page2parent">
         <div class="page_1">
@@ -100,58 +102,60 @@
         </div>
         <div class="page_2_parent">
           <div class="page_2">
-            <div class="page1_bellow">
-              <div
-                class="custom-container project"
-                onmouseenter="divein()"
-                onmouseleave="diveout()"
-              >
-                <h1>Project</h1>
-                <div class="container_bottom">
-                  <div class="horizontal-line containerline"></div>
-                  <h4>Dive</h4>
-                </div>
-                <img src="assets/Ornament 1.png" alt="" class="circles" />
-              </div>
-
-              <div
-                class="custom-container skills"
-                onmouseenter="divein()"
-                onmouseleave="diveout()"
-              >
-                <h1>Skills</h1>
-                <div class="container_bottom">
-                  <div class="horizontal-line containerline"></div>
-                  <h4>Dive</h4>
-                </div>
-                <img src="assets/Ornament 1.png" alt="" class="circles" />
-              </div>
-
-              <div class="page1_bellow_right">
+            <span class="page1_bellow_parent">
+              <div class="page1_bellow">
                 <div
-                  class="custom-container certifications"
+                  class="custom-container project"
                   onmouseenter="divein()"
                   onmouseleave="diveout()"
                 >
-                  <h3>Certifications</h3>
+                  <h1>Project</h1>
                   <div class="container_bottom">
                     <div class="horizontal-line containerline"></div>
                     <h4>Dive</h4>
                   </div>
+                  <img src="assets/Ornament 1.png" alt="" class="circles" />
                 </div>
+  
                 <div
-                  class="custom-container resume"
+                  class="custom-container skills"
                   onmouseenter="divein()"
                   onmouseleave="diveout()"
                 >
-                  <h3>Recruiter's CV</h3>
+                  <h1>Skills</h1>
                   <div class="container_bottom">
                     <div class="horizontal-line containerline"></div>
-                    <h4>Download</h4>
+                    <h4>Dive</h4>
+                  </div>
+                  <img src="assets/Ornament 1.png" alt="" class="circles" />
+                </div>
+  
+                <div class="page1_bellow_right">
+                  <div
+                    class="custom-container certifications"
+                    onmouseenter="divein()"
+                    onmouseleave="diveout()"
+                  >
+                    <h3>Certifications</h3>
+                    <div class="container_bottom">
+                      <div class="horizontal-line containerline"></div>
+                      <h4>Dive</h4>
+                    </div>
+                  </div>
+                  <div
+                    class="custom-container resume"
+                    onmouseenter="divein()"
+                    onmouseleave="diveout()"
+                  >
+                    <h3>Recruiter's CV</h3>
+                    <div class="container_bottom">
+                      <div class="horizontal-line containerline"></div>
+                      <h4>Download</h4>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </span>
             <div class="page2">
               <div class="page_2_text">
                 <h4>
@@ -168,9 +172,7 @@
                 </h4>
               </div>
               <div
-                class="page_2_text mask"
-                onmouseenter="maskExpand()"
-                onmouseleave="maskShrink()"
+                class="page_2_text"
               >
                 <h4>
                   Soon discovered I couldn't build one myself due to
@@ -193,6 +195,7 @@
       <div class="page_3">
         <div class="line" style="top: 0; height: 10px"></div>
         <div
+          id="page3"
           class="container"
           style="height: 80%; display: flex; align-items: center"
         >
@@ -226,6 +229,7 @@
       <div class="page_4">
         <div class="line2" style="top: 0; height: 40px"></div>
         <div
+          id="page4"
           class="container skill_card_parent"
           style="
             height: 80%;
@@ -240,7 +244,9 @@
 
       <div class="page5">
         <div class="line3" style="top: 0; height: 40px"></div>
-        <div
+        <span class="page5wraper" id="page5">
+          <div
+          id="page5"
           class="container caertificates_parent"
           style="height: 80%; gap: 3%"
         >
@@ -281,11 +287,13 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
+        </span>
       </div>
 
       <div class="page_6">
         <div class="line4" style="top: 0; height: 40px"></div>
         <div
+          id="page6"
           class="container resume_parent"
           style="height: 80%; gap: 3rem"
         >
@@ -373,10 +381,69 @@
         </div>
         </div>
       </div>
+
+      <div class="page_7">
+        <div class="line5" style="top: 0; height: 10px"></div>
+        <div class="container" style="display: flex;gap: 4rem;" id="page7">
+          <div class="contact-right">
+            <span class="myphoneno contact">
+              <div class="myphoneimg round"><img src="./assets/user-rounded-svgrepo-com.svg"></div>
+              <div class="line-extend"></div>
+              <div class="body">
+                <span class="body-hedding"> <h3>Phone Number</h3> </span>
+                <span class="body-content"> <h4>9704991147</h4> </span>
+              </div>
+            </span>
+            <span class="myemail contact">
+              <div class="myphoneimg round"><img src="./assets/letter-svgrepo-com.svg"></div>
+              <div class="line-extend"></div>
+              <div class="body">
+                <span class="body-hedding"> <h3>my Email</h3> </span>
+                <span class="body-content"> <h4>dineshwear@gmail.com</h4> </span>
+              </div>
+            </span>
+            <span class="adress contact">
+              <div class="myphoneimg round"><img src="./assets/point-on-map-svgrepo-com.svg"></div>
+              <div class="line-extend"></div>
+              <div class="body">
+                <span class="body-hedding"> <h3>Address</h3> </span>
+                <span class="body-content"> <h4>Telangana, ECIL</h4> </span>
+              </div>
+            </span>
+            <span class="more contact">
+              <div class="myphoneimg round"><img src="./assets/computer-svgrepo-com.svg"></div>
+              <div class="line-extend"></div>
+              <div class="body">
+                <span class="body-hedding"> <h3>more websites </h3> </span>
+                <span class="body-content"> <a href="https://leetcode.com/u/dinonomous/" target="_blank"> <h4> leetcode </h4> </a> </span>
+                <span class="body-content"> <a href="https://www.hackerrank.com/profile/dineshwear" target="_blank"><h4> HackerRank </h4></a> </span>
+              </div>
+            </span>
+          </div>
+          <div class="contact-left">
+            <div class="contact_parent">
+              <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <div class="contact-hedding">
+                  <h2>Lets get in Touch</h2>
+                  <hr>
+                </div>
+                <input type="hidden" name="access_key" value="754540b9-4da5-4016-80a0-aeb12da36f94">
+                <div class="contact-info">
+                  <input type="text" name="name" placeholder="your name" class="contact-input" required>
+                  <input type="email" name="email" placeholder="your email" class="contact-input" required>
+                </div>
+                <textarea name="message" id="" placeholder="your message" class="contact-input textarea" ></textarea>
+                <button type="submit" class="button"> Submit </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./js/slider.js"></script>
     <script src="./js/skills.js"></script>
     <script src="./js/certificates.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
