@@ -47,6 +47,7 @@
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 2;
+
 }
 .card_array {
     position: relative;
@@ -54,7 +55,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  overflow-x: scroll;
+  overflow-x: hidden;
   width: var(--widthArray);
   border-radius: 20px;
   z-index: inherit;
@@ -83,7 +84,7 @@
 .next{
     right: 1rem;
 }
-.project_textarea{
+.project_textarea {
     height: 60%;
     min-width: var(--widthArray);
     display: flex;
@@ -92,15 +93,23 @@
     justify-content: space-evenly;
     position: absolute;
     bottom: 0;
-    background-color: #02020b8b;
+    background-color: rgba(2, 2, 11, 0.545); /* Adjust transparency as needed */
     border-top-right-radius: 35px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     color: white;
     padding: 1rem;
+  
+    /* Standard syntax */
     backdrop-filter: blur(5px);
-    opacity: 0;
-}
+  
+    /* Prefix for Safari */
+    -webkit-backdrop-filter: blur(5px);
+  
+    /* Fallback for older browsers */
+    background-color: rgba(2, 2, 11, 0.8); /* Adjust transparency as needed */
+  }
+  
 .project_textarea span{
     width: 100%;
 }
@@ -135,4 +144,7 @@
     width: calc(var(--side) - 20px);
     object-fit: cover;
     border-radius: inherit;
+}
+.colored{
+    color: var(--yellow);
 }

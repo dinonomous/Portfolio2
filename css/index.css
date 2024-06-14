@@ -12,6 +12,7 @@
   --widthArray: calc(var(--side) + var(--side));
   --blueshadow: 4px 4px 1px 1px var(--blue);
   position: relative;
+  overflow-x: hidden;
 }
 * {
   font-family: Bebas Neue;
@@ -139,15 +140,20 @@ p {
   bottom: -3rem;
 }
 .prloader-button{
-  background-color: #5941A9;
-  border: 2px solid var(--yellow);
+  background-color: var(--white);
+  border: 2px solid var(--red);
   height: 3rem;
   width: 6rem;
   border-radius: 1.5rem;
   font-size: 1.5rem;
-  position: absolute;
-  bottom: 2rem;
+  position: relative;
   opacity: 0;
+  box-shadow: var(--blueshadow);
+}
+.prloader-button:hover{
+  background-color: var(--backGroundColour);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
 }
 .music{
   border-radius: 50%;
@@ -182,4 +188,55 @@ p {
   background-color: var(--yellow);
   color: var(--black);
   transition: all 0.5s ease-in-out;
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border-radius: 2.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--yellow) var(--black);
+}
+
+* {
+  scrollbar-gutter: stable;
+}
+
+/* For Internet Explorer/Edge */
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+body::-ms-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-ms-scrollbar-track {
+  background: var(--black);
+}
+
+body::-ms-scrollbar-thumb {
+  background: var(--yellow);
+  border-radius: 2.5px;
+}
+
+body::-ms-scrollbar-thumb:hover {
+  background: var(--red);
 }

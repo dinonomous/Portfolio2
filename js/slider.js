@@ -81,7 +81,12 @@ function setMainProject() {
     mainProjecDescription.appendChild(mainProjectP);
   
     mainProjecGithub.onclick = () => window.open(projects[currentSeleted].github, '_blank');
-    mainProjecLink.onclick = () => window.open(projects[currentSeleted].link, '_blank');
+    mainProjecLink.onclick = () => {
+      const projectLink = projects[currentSeleted].link;
+      if (projectLink) {
+        window.open(projectLink, '_blank');
+      }
+    };
   }
 
 function mainMouseEnter(){

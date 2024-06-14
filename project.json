@@ -5,32 +5,32 @@
             "backgroundImage": "./assets/images/projects/SRMLaunchPad.mp4",
             "skills": ["React", "Node" , "express" , "mongoDB"],
             "Description": "SRMLaunchPad is an advanced online eLearning platform for B.Tech students at SRM University, offering video lectures, study materials, and interactive quizzes to enhance their educational experience.",
-            "github": "https://github.com/user/SRMLaunchpad",
-            "link": "https://srmlaunchpad.example.com"
+            "github": "https://github.com/dinonomous/SRMLaunchPad",
+            "link": false
         },
         {
             "Name": "Spotify Clone",
             "backgroundImage": "./assets/images/projects/spotifyProject.mp4",
             "skills": ["JavaScript", "CSS", "HTML"],
             "Description": "The Spotify Clone is a web application built using HTML, CSS, and JavaScript, featuring a responsive design, an intuitive user interface similar to Spotify, a mock music library, functional audio playback controls, and interactive elements like search and playlist creation, showcasing modern web development techniques.",
-            "github": "https://github.com/user/WeatherApp",
-            "link": "https://weatherapp.example.com"
+            "github": "https://github.com/dinonomous/Spotify-Clone",
+            "link": "https://dinesh.freewebhostmost.com/"
         },
         {
             "Name": "SRMmessMenue",
             "backgroundImage": "./assets/images/projects/SRMmessMenueProject.mp4",
             "skills": ["JavaScript", "CSS", "HTML"],
             "Description": "This website is designed for SRM University students to conveniently view their hostel mess menu and manage their daily tasks with an integrated to-do list. The platform allows students to easily check what meals are being served and plan their schedules efficiently, combining the essential functions of meal planning and task management into one user-friendly interface.",
-            "github": "https://github.com/user/PortfolioWebsite",
-            "link": "https://portfolio.example.com"
+            "github": "https://github.com/dinonomous/Java-Script-Projects",
+            "link": "https://messmenue.netlify.app/"
         },
         {
             "Name": "Netflix Clone",
             "backgroundImage": "./assets/images/projects/netflixClone.mp4",
             "skills": ["HTML" , "CSS"],
             "Description": "This Netflix-inspired login page, crafted with HTML, CSS, and JavaScript, mirrors the sleek interface of the popular streaming service",
-            "github": "https://github.com/user/EcommercePlatform",
-            "link": "https://ecommerceplatform.example.com"
+            "github": "https://github.com/dinonomous/Netflix-Clone",
+            "link": false
         }
     ]
 }

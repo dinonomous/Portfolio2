@@ -28,7 +28,8 @@ window.addEventListener('load',function(){
         duration: 3,
     })
     gsap.to(loaderBtn,{
-        opacity: 1
+        opacity: 1,
+        y: '-5rem'
     })
     gsap.to(loaderSpinner,{
         opacity: 0
