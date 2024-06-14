@@ -58,12 +58,22 @@ function maskShrink() {
 }
 
 function divein(e) {
-    cursor.innerHTML = e ? `${e}` : '';
-    gsap.to(cursor, {
-        width: "80px",
-        height: "80px",
-        border: "1px solid black"
-    });
+    if(e !== true){
+        cursor.innerHTML = e ? `${e}` : '';
+        gsap.to(cursor, {
+            width: "80px",
+            height: "80px",
+            border: "1px solid black"
+        });
+    }
+    else {
+        gsap.to(cursor, {
+            width: "80px",
+            height: "80px",
+            border: "1px solid black",
+        });
+    }    
+    
 }
 
 function diveout() {

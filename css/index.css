@@ -165,3 +165,21 @@ p {
   cursor: pointer;
   z-index: 8;
 }
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: 3rem;
+  width: 6rem;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  padding-top: 3px;
+  background-color: #e5d4ed37;
+  color: var(--white);
+}
+.button:hover{
+  background-color: var(--yellow);
+  color: var(--black);
+  transition: all 0.5s ease-in-out;
+}

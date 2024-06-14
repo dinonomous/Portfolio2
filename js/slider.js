@@ -1,6 +1,8 @@
 const main = document.querySelector(".main_project");
+const mainVideo = document.querySelector(".main_video");
 const arrayParent = document.querySelector(".card_array_parent");
 const array = document.querySelector(".card_array");
+const page3 = document.getElementById("page3")
 var projects;
 let currentSeleted = 0;
 var count = 3;
@@ -20,7 +22,18 @@ fetch("project.json")
       const div = document.createElement("div");
       div.classList.add("custom_card");
       div.id = `card-${index}`;
-      div.style.backgroundImage = `url(${project.backgroundImage})`;
+      if(index === 0){
+        div.style.border = '1px solid yellow';
+      }
+
+      const video = document.createElement("video");
+      video.classList.add('card-video');
+      video.src = project.backgroundImage;
+      video.autoplay = false;
+      video.muted = true;
+      video.loop = true;
+      div.appendChild(video);
+
       array.appendChild(div);
       div.addEventListener("click", () => {
         currentSeleted = index;
@@ -34,7 +47,7 @@ fetch("project.json")
   });
 
 function updateMainBackground() {
-  main.style.backgroundImage = `url(${projects[currentSeleted].backgroundImage})`;
+  mainVideo.src = `${projects[currentSeleted].backgroundImage}`;
 }
 
 function scrollToCurrentSelected() {
@@ -44,9 +57,11 @@ function scrollToCurrentSelected() {
   });
 }
 
-function SelectedBackgroundColour(e){
-    const a = document.querySelector(`card-${e}`);
-    a.style.border = '1px solid yellow'
+function SelectedBorderColour(e){
+    const a = document.querySelector(`#card-${e}`);
+    if (a) {
+      a.style.border = '1px solid yellow';
+  }
 }
 
 function setMainProject() {
@@ -73,7 +88,7 @@ function mainMouseEnter(){
     gsap.to(arrayParent, {
         zIndex: 0,
         duration: 0.3,
-        scale: 0.9
+        scale: 0.9,
     });
     gsap.to(mainProjectTextArea,{
         opacity: 1,
@@ -81,14 +96,14 @@ function mainMouseEnter(){
     })
     gsap.to(main,{
         scale: 1.05,
-        duration: 0.3
+        duration: 0.3,
     })
 }
 function mainMouseLeave(){
     gsap.to(arrayParent, {
         zIndex: 2,
         duration: 0.3,
-        scale: 1
+        scale: 1,
     });
     gsap.to(mainProjectTextArea,{
         opacity: 0,
@@ -96,13 +111,20 @@ function mainMouseLeave(){
     })
     gsap.to(main,{
         scale: 1,
-        duration: 0.3
+        duration: 0.3,
     })
 }
 
 function updateCurrentSelected(increment) {
+  const previousSelected = document.querySelector(`#card-${currentSeleted}`);
+    if (previousSelected) {
+        previousSelected.style.border = '';
+    }
+
   currentSeleted =
     (currentSeleted + increment + projects.length) % projects.length;
+  
+  SelectedBorderColour(currentSeleted)
   updateMainBackground();
   scrollToCurrentSelected();
   setMainProject()

@@ -4,19 +4,22 @@
       "group": "group1",
       "certificates": [
         {
-          "imgSrc": "https://picsum.photos/501/401",
-          "title": "Certificate Title 1",
-          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+          "imgSrc": "./assets/images/Personalcertificates/AICTEAIML.png",
+          "title": "AICTE: AI & ML Virtual Internship",
+          "text": "Successfully Completed: 10 weeks (January - March 2024) . This experience ignited my passion for Artificial Intelligence. I'm eager to keep learning and growing in this exciting space!",
+          "verify": "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=b24037cf00ba2f03fd0028fba837ce1c"
         },
         {
-          "imgSrc": "https://picsum.photos/501/401",
-          "title": "Certificate Title 2",
-          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+          "imgSrc": "./assets/images/Personalcertificates/AICTECloud.png",
+          "title": "AICTE: Cloud Virtual Internship",
+          "text": "Successfully Completed: 10 weeks (September - November 2023). This virtual internship with AWS Academy provided a springboard into the world of cloud computing. Eager to leverage this knowledge and keep exploring the vast potential of cloud technologies.",
+          "verify": "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=6015d95bdb9c52e13c26d92c79b1d8f5"
         },
         {
-          "imgSrc": "https://picsum.photos/501/401",
-          "title": "Certificate Title 3",
-          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+          "imgSrc": "./assets/images/Personalcertificates/AWSAIML.png",
+          "title": "AWS Academy: Machine Learning Foundations",
+          "text": "Successfully Completed: 20 Hours . This experience ignited my passion for Artificial Intelligence. I'm eager to keep learning and growing in this exciting space!",
+          "verify": "https://www.credly.com/badges/fbc3ed6f-8672-4c80-b24e-36c9259e80b4/public_url"
         }
       ]
     },
@@ -24,19 +27,62 @@
       "group": "group2",
       "certificates": [
         {
-          "imgSrc": "https://picsum.photos/500/400",
-          "title": "Certificate Title 4",
-          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+          "imgSrc": "./assets/images/Personalcertificates/AWSCloudPractitioner.png",
+          "title": "AWS Academy: Cloud Foundations",
+          "text": "Successfully Completed: 20 Hours. Demonstrated a strong foundation in cloud computing concepts and a comprehensive understanding of the AWS Cloud platform through achieving the AWS Certified Cloud Practitioner certification.",
+          "verify": "https://www.credly.com/badges/a2a7fbd2-9124-446e-953a-73e99e09987f/public_url"
         },
         {
-          "imgSrc": "https://picsum.photos/500/400",
-          "title": "Certificate Title 5",
-          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+          "imgSrc": "./assets/images/Personalcertificates/AWSCloudArchitet.png",
+          "title": "AWS Academy: Cloud Architecting",
+          "text": "Successfully Completed: 40 Hours. AWS Cloud Architect with expertise in designing, securing, and optimizing cloud infrastructure to deliver high-performance solutions that meet business objectives.",
+          "verify": "https://www.credly.com/badges/d69da1e4-1ddd-4ebd-9c6a-6a900955a153/public_url"
         },
         {
-          "imgSrc": "https://picsum.photos/500/400",
-          "title": "Certificate Title 6",
-          "text": "Some quick example text to build on the card title and make up the bulk of the card's content."
+          "imgSrc": "./assets/images/Personalcertificates/implement-load-balancing-on-compute-engine-skill-ba.png",
+          "title": "Google Cloud Implement Load Balancing on Compute Engine",
+          "text": "Successfully implemented a basic HTTP(S) Load Balancer on Google Cloud Platform's Compute Engine to distribute traffic across a pool of virtual machines, improving application scalability and high availability.",
+          "verify": "https://www.credly.com/badges/6d8c43b2-163e-46ba-96cf-f0a600d69671/public_url"
+        }
+      ]
+    },
+    {
+      "group": "group3",
+      "certificates": [
+        {
+          "imgSrc": "./assets/images/Personalcertificates/CPP.png",
+          "title": "Beginning C++ Programming - From Beginner to Beyond",
+          "text": "Completed a 40-hour. Udemy course on C++, gaining a strong foundation in Object-Oriented Design and Programming (OODP) principles.",
+          "verify": "https://ude.my/UC-74cdf5e4-c816-40da-92b1-3ad6f95c83e0"
+        },
+        {
+          "imgSrc": "./assets/images/Personalcertificates/Udemy Python.png",
+          "title": "Crash Course on Python",
+          "text": "Actively expanding my programming skillset through a 20-hour Udemy course on Python, eager to apply this knowledge to real-world projects.",
+          "verify": "https://coursera.org/verify/TYQG8MY2FCK7"
+        },
+        {
+          "imgSrc": "./assets/images/Personalcertificates/Googleclouf.png",
+          "title": "QDC Google Cloud Work Shop Organization",
+          "text": "Acted as a subject matter expert at a Google Cloud workshop, assisting attendees with their questions and explaining complex topics. This experience leveraged my knowledge of Google Cloud.",
+          "verify": null
+        }
+      ]
+    },
+    {
+      "group": "group4",
+      "certificates": [
+        {
+          "imgSrc": "./assets/images/Personalcertificates/figma design.png",
+          "title": "Figma Desi",
+          "text": "Expanded my design skillset by participating in a hands-on Figma workshop focused on UI/UX for App Development (March 1, 2024).",
+          "verify": null
+        },
+        {
+          "imgSrc": "./assets/images/Personalcertificates/hacktricksHackathon.png",
+          "title": "SRM HackTrix Hackaton",
+          "text": "Hackathon experience at HackTrix honed teamwork, problem-solving, and rapid development through collaboration on a prototype for Implimentation of AIML.",
+          "verify": null
         }
       ]
     }

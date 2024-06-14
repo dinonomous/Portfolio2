@@ -9,6 +9,7 @@
   justify-content: center;
 }
 .card {
+  --cardImageHeight: 18rem;
   --bs-card-spacer-y: 0rem;
   --bs-card-spacer-x: 0rem;
   --bs-card-title-spacer-y: 1rem;
@@ -16,16 +17,16 @@
   --bs-card-subtitle-color: ;
   --bs-card-border-width: var(--bs-border-width);
   --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: var(--bs-border-radius);
+  --bs-card-border-radius: 35px;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(
-    var(--bs-border-radius) - (var(--bs-border-width))
+    35px - (var(--bs-card-cap-padding-x))
   );
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
   --bs-card-cap-color: ;
-  --bs-card-height: ;
+  --bs-card-height: 42rem;
   --bs-card-color: ;
   --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1rem;
@@ -34,7 +35,7 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  height: var(--bs-card-height);
+  height: var(--bs-card-height) !important;
   color: var(--bs-body-color);
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
@@ -42,9 +43,40 @@
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
   padding: 1rem;
+  color: var(--black);
+  box-shadow: var(--blueshadow);
+  text-overflow: ellipsis;
 }
 .card-body {
   padding-top: 1rem;
+  max-height: calc(var(--bs-card-height) - var(--cardImageHeight) - 2rem) !important;
+  overflow: hidden; /* Prevent overflow */
+  white-space: normal; /* Ensure text wraps */
+  text-overflow: clip; /* Handle text overflow */
+}
+.card-body .button{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--black);
+  background-color: var(--white);
+}
+.anchour-btn{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: Bebas Neue !important;
+  min-width:fit-content ;
+  padding: 10px 0.5rem 0rem 0.5rem;
+}
+.anchour-btn:visited{
+  background-color: var(--red);
+  color: var(--white);
+}
+.card-body .button:hover{
+  background-color: var(--yellow);
 }
 .card-body h5 {
   font-size: 2rem;
@@ -65,6 +97,7 @@
   gap: 3%;
   width: 100% !important;
   position: relative;
+  padding: 1rem;
 }
 .carousel-control-next , .carousel-control-prev{
   background-color: rgba(0, 0, 0, 0.89);
@@ -100,4 +133,12 @@
 .carousel-indicators{
   position: absolute;
   bottom: -5rem;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+  height: var(--cardImageHeight) !important;
+  object-fit: cover;
+  background-color: var(--black);
 }

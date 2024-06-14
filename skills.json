@@ -2,33 +2,28 @@
     "skills": [
         {
             "title": "Web Developer MERN",
-            "description": "A comprehensive launchpad for managing projects with React and Node.",
-            "percentage": 80
+            "description": "Unleashed my inner developer, building a full-fledged MERN stack app (think MongoDB, Express, React, Node.js) from YouTube wisdom. Got hands-on with SRMLaunchPad.",
+            "percentage": 70
         },
         {
             "title": "Cloud Arcitect",
-            "description": "A comprehensive launchpad for managing projects with React and Node.",
-            "percentage": 80
+            "description": "Propelled by a AICTE Government of India AWS Architecting internship,  Gained the knowledge to design secure, scalable solutions using core AWS services like EC2, S3, and IAM.",
+            "percentage": 70
         },
         {
             "title": "C and C++",
-            "description": "A comprehensive launchpad for managing projects with React and Node.",
+            "description": "Possess a strong understanding of core C/C++ programming concepts, including syntax, data structures.Familiarity with common data structures and algorithms for efficient problem-solving.",
             "percentage": 80
         },
         {
             "title": "Python & Django",
-            "description": "A comprehensive launchpad for managing projects with React and Node.",
-            "percentage": 80
-        },
-        {
-            "title": "Java Script",
-            "description": "A comprehensive launchpad for managing projects with React and Node.",
-            "percentage": 80
+            "description": "Possess a strong understanding of core Python programming concepts like data structures, control flow, and functions. Gained practical experience building web applications with the Django framework.",
+            "percentage": 60
         },
         {
             "title": "AI and ML",
-            "description": "A comprehensive launchpad for managing projects with React and Node.",
-            "percentage": 80
+            "description": "Gained practical experience in Artificial Intelligence and Machine Learning through a government-sponsored internship. AICTE AWS Academy Machine Learning Foundations",
+            "percentage": 40
         }
     ]
 }

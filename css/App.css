@@ -105,7 +105,6 @@
   font-weight: bold;
   font-family: "Baumans", system-ui;
   line-height: 1px;
-  backdrop-filter: invert(1);
 }
 
 .page1_above_photo_mask{

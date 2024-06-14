@@ -1,13 +1,20 @@
 function generateCertificatesHTML(certificates) {
   let html = "";
   certificates.forEach((certificate) => {
+    let verifyElement;
+    if (certificate.verify) {
+      verifyElement = `<a href="${certificate.verify}" class="anchour-btn button" target="_blank" onmouseenter="divein('Redirect')" onmouseleave="diveout()"><p>verify</p></a>`;
+    } else {
+      verifyElement = `<a class="anchour-btn button" target="_blank" onmouseenter="divein('Sorry')" onmouseleave="diveout()"><p>Non Verify</p></a>`;
+    }
+
     html += `
         <div class="card certificate" style="width: 30%; height: 100%">
           <img src="${certificate.imgSrc}" class="card-img-top" alt="certificate"/>
           <div class="card-body">
             <h5 class="card-title">${certificate.title}</h5>
             <p class="card-text">${certificate.text}</p>
-            <button class="button">verify</button>
+            ${verifyElement}
           </div>
         </div>
       `;

@@ -17,16 +17,15 @@ function playpause(element) {
 
 window.addEventListener('load',function(){
     gsap.to(loaderback,{
-        scale: 1.3,
-        rotate: 180,
+        rotate: 360,
         duration: 5,
         repeat: -1,
-        x:10,
-        yoyo: true,
-        ease: "power2.out",
+        ease:Linear.easeNone
     })
     gsap.to(loaderback,{
+        scale: 1.4,
         opacity: 1,
+        duration: 3,
     })
     gsap.to(loaderBtn,{
         opacity: 1

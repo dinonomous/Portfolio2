@@ -3,32 +3,32 @@
         {
             "Name": "SRMLaunchpad",
             "backgroundImage": "./assets/images/projects/SRMLaunchPad.mp4",
-            "skills": ["React", "Node", "HTML"],
-            "Description": "A comprehensive launchpad for managing projects with React and Node.",
+            "skills": ["React", "Node" , "express" , "mongoDB"],
+            "Description": "SRMLaunchPad is an advanced online eLearning platform for B.Tech students at SRM University, offering video lectures, study materials, and interactive quizzes to enhance their educational experience.",
             "github": "https://github.com/user/SRMLaunchpad",
             "link": "https://srmlaunchpad.example.com"
         },
         {
-            "Name": "WeatherApp",
-            "backgroundImage": "https://random.imagecdn.app/501/150",
+            "Name": "Spotify Clone",
+            "backgroundImage": "./assets/images/projects/spotifyProject.mp4",
             "skills": ["JavaScript", "CSS", "HTML"],
-            "Description": "A weather forecasting application that provides real-time weather updates.",
+            "Description": "The Spotify Clone is a web application built using HTML, CSS, and JavaScript, featuring a responsive design, an intuitive user interface similar to Spotify, a mock music library, functional audio playback controls, and interactive elements like search and playlist creation, showcasing modern web development techniques.",
             "github": "https://github.com/user/WeatherApp",
             "link": "https://weatherapp.example.com"
         },
         {
-            "Name": "PortfolioWebsite",
-            "backgroundImage": "https://random.imagecdn.app/502/150",
-            "skills": ["React", "CSS", "HTML"],
-            "Description": "A personal portfolio website to showcase projects and skills.",
+            "Name": "SRMmessMenue",
+            "backgroundImage": "./assets/images/projects/SRMmessMenueProject.mp4",
+            "skills": ["JavaScript", "CSS", "HTML"],
+            "Description": "This website is designed for SRM University students to conveniently view their hostel mess menu and manage their daily tasks with an integrated to-do list. The platform allows students to easily check what meals are being served and plan their schedules efficiently, combining the essential functions of meal planning and task management into one user-friendly interface.",
             "github": "https://github.com/user/PortfolioWebsite",
             "link": "https://portfolio.example.com"
         },
         {
-            "Name": "EcommercePlatform",
-            "backgroundImage": "https://random.imagecdn.app/503/150",
-            "skills": ["Vue", "Node", "HTML"],
-            "Description": "A full-fledged ecommerce platform built with Vue and Node.",
+            "Name": "Netflix Clone",
+            "backgroundImage": "./assets/images/projects/netflixClone.mp4",
+            "skills": ["HTML" , "CSS"],
+            "Description": "This Netflix-inspired login page, crafted with HTML, CSS, and JavaScript, mirrors the sleek interface of the popular streaming service",
             "github": "https://github.com/user/EcommercePlatform",
             "link": "https://ecommerceplatform.example.com"
         }

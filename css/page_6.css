@@ -17,7 +17,7 @@
 .resume_hedding h1{
  text-align: center;
  color: var(--white);
- font-size: 3rem;
+ font-size: 3.5rem;
 }
 .resume_experiance , .resume_education{
     min-width: 50%;
@@ -28,6 +28,8 @@
 }
 .collapsed{
     border-radius: 35px;
+    color: var(--yellow);
+    font-size: 1.5rem;
 }
 .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
     border-bottom-right-radius: 35px;
@@ -65,8 +67,10 @@
     
 }
 .accordion-button{
+    color: var(--yellow);
+}
+.accordion-button{
     background-color: var(--red);
-    color: var(--white);
     border-radius: 35px;
 }
 .accordion-button:focus{
@@ -74,7 +78,8 @@
 }
 .accordion-button:not(.collapsed){
     background-color: var(--red);
-    color: var(--white);
+    color: var(--yellow);
+    font-size: 1.5rem;
 }
 .accordion-button::after{
     border: 1px solid var(--white);
@@ -92,4 +97,29 @@
 .accordion-button:not(.collapsed)::after{
     background-image: url('../assets/arrow-to-down-left-svgrepo-com.svg');
     background-position: center center;
+}
+.accordion-body:not(.p_in_dis p){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 0;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.p_in_dis{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.3rem;
+}
+.p_in_dis p:last-child {
+    /* Add your styles for the last <p> element here */
+    color: var(--yellow); /* Example: Change the color of the last <p> */
+}
+.accordion .accordion-item:last-child .accordion-body p:first-child{
+    font-size: 2rem;
+    font-style: italic;
 }

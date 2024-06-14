@@ -1,3 +1,17 @@
+:root {
+    background-color: #02020b;
+    --backGroundColour: #02020b;
+    --black: #02020b;
+    --white: #e5d4ed;
+    --red: #5E0B15;
+    --yellow: #F4E04D;
+    --blue: #5941A9;
+    --height: 57vh;
+    --side: 300px;
+    --widthArray: calc(var(--side) + var(--side));
+    --blueshadow: 4px 4px 1px 1px var(--blue);
+    position: relative;
+  }
 .page_7 {
     position: relative;
     min-height: 100vh;
@@ -33,6 +47,9 @@
 .contact-hedding{
     text-align: center;
     width: 100%;
+}
+.contact-hedding p {
+    color: #F4E04D;
 }
 .contact-info{
     display: flex;
@@ -120,7 +137,4 @@
 .contact-input:focus {
     border: 2px dashed var(--yellow);
     outline: none; /* Optionally remove the outline as well */
-}
-input:focus, input::-moz-focus-inner, input:focus-within, input:focus-visible, input::-moz-focus-outer{
-    border: none;
 }
