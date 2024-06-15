@@ -4,6 +4,29 @@ const page5Animate = document.querySelector('#page5')
 const page6Animate = document.querySelector('#page6')
 const page7Animate = document.querySelector('#page7')
 
+gsap.registerPlugin(ScrollToPlugin);
+
+function scrolltoprojects() {
+      gsap.to(window, {
+          duration: 2,
+          scrollTo: "#page3id",
+          ease: "power2.out",
+        })
+}
+function scrolltoskill() {
+      gsap.to(window, {
+          duration: 2,
+          scrollTo: "#page4id",
+          ease: "power2.out",
+        })
+}
+function scrolltoCertifications() {
+      gsap.to(window, {
+          duration: 2,
+          scrollTo: "#page5id",
+          ease: "power2.out",
+        })
+}
 
 var tl = gsap.timeline();
 function slideprloader(){
