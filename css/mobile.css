@@ -26,3 +26,17 @@
         height: 200vh !important;
     }
   }
+  @media screen and (max-height: 610px){
+    .page2 h4{
+        font-size: 1.2rem;
+    }
+    .Projectname h1{
+        font-size: 3rem;
+    }
+    .Project_skills h2{
+        font-size: 2rem;
+    }
+    .project_despription p{
+        font-size: 1rem;
+    }
+  }

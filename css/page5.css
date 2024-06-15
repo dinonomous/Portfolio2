@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
 }
+.page5wraper{
+  padding: 3rem;
+}
 .card {
   --cardImageHeight: 18rem;
   --bs-card-spacer-y: 0rem;

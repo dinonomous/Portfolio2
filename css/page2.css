@@ -20,7 +20,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+    overflow-y: hidden;
 }
 .page_2_text{
     width: 60%;

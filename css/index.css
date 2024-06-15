@@ -118,6 +118,9 @@ p {
   border-radius: 3rem;
   padding: 1rem;
   position: relative;
+  z-index: 2;
+  cursor: none;
+  height: 100%;
 }
 .prloader{
   background-color: var(--backGroundColour);

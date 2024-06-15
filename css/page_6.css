@@ -14,6 +14,9 @@
     justify-content: center;
 
   }
+#page6{
+    padding: 3rem;
+}
 .resume_hedding h1{
  text-align: center;
  color: var(--white);
