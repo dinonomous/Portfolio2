@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
     })
     gsap.to(loaderBtn,{
         opacity: 1,
-        y: '-5rem'
+        y: '-4rem'
     })
     gsap.to(loaderSpinner,{
         opacity: 0

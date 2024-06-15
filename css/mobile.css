@@ -1,0 +1,28 @@
+@media screen and (max-width: 885px) {
+    .page1_text h1 {
+      font-size: 5rem !important; /* Font size for medium screens */
+    }
+  
+    .page1_text h2 {
+      font-size: 2.5rem !important; /* Font size for medium screens */
+    }
+    .prloader-button{
+        margin-top: 5rem;
+    }
+    .page1_text{
+        text-align: center;
+    }
+    .loader-back{
+        top: 60%;
+    }
+    .page1_above{
+        flex-direction: column;
+        height: 100% !important;
+    }
+    .page1{
+        height: 100vh !important;
+    }
+    .page1page2parent{
+        height: 200vh !important;
+    }
+  }

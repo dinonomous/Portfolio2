@@ -8,7 +8,8 @@ const page7Animate = document.querySelector('#page7')
 var tl = gsap.timeline();
 function slideprloader(){
   tl.to(loader,{
-      y: '-100%'
+      y: '-500%',
+      duration: 2
   })
   playpause(musicBack)
   tl.from(".page1_text h1", {

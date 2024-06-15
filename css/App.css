@@ -44,23 +44,29 @@
   height: var(--height);
   position: relative;
 }
-.page1_above_photo{
+.page1_above_photo {
   position: relative;
-}
-.page1_above_photo_dinesh_photo{
-  position: relative;
-  height: 20rem;
+  height: 70%;
   width: 20rem;
+  object-fit: contain;
+}
+
+.page1_above_photo_dinesh_photo {
+  position: relative;
+  height: 100%;
   z-index: 1;
   border-radius: 50%;
   box-shadow: var(--blueshadow);
+  object-fit: contain;
+}
+.invisible-text {
+  visibility: hidden;
+  opacity: 0;
 }
 .mask1{
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 100%;
-  height: 58%;
+  height: 58vh;
   -webkit-mask-image: url('../assets/mask.svg'); /* For WebKit-based browsers */
   mask-image: url('../assets/mask.svg'); /* Standard property */
   background-color: #5E0B15;
@@ -70,20 +76,12 @@
   transition-timing-function:ease-out;
   transition-delay: 1ms;
 }
-.mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-mask-image: url('../assets/mask.svg'); /* For WebKit-based browsers */
-  mask-image: url('../assets/mask.svg'); /* Standard property */
-  background-color: #5E0B15;
-  mask-repeat: no-repeat;
-  z-index: 1;
-  transition-duration: 200ms;
-  transition-timing-function:ease-out;
-  transition-delay: 1ms;
+.main_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 100%;
 }
 
 .cursor_pointer {
@@ -106,40 +104,31 @@
   font-family: "Baumans", system-ui;
   line-height: 1px;
 }
+.page1_text h1{
+  font-size: 6rem !important;
+}
+.page1_text h2{
+  font-size: 3rem !important;
+}
+@media screen and (max-width: 1140px) {
+  .page1_text h1 {
+    font-size: 4rem !important; /* Font size for medium screens */
+  }
 
-.page1_above_photo_mask{
-  content: "";
-  width: 20rem;
-  height: 20rem;
+  .page1_text h2 {
+    font-size: 2.5rem !important; /* Font size for medium screens */
+  }
 }
-.page1_above_mask{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  position: relative;
-  height: 100%;
-}
-.mask_text{
-  margin-top: 0.89rem;
-  margin-left: -20rem;
-}
-.page1_text{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding: 0rem 2rem;
-  z-index: 1;
-}
+
 
 .circle_text{
   left: -20%;
   top: -25%;
 }
 .circles{
-  height: 12rem;
+  height: 60%;
+  width: 50%;
+  object-fit: contain;
   position: absolute;
   right: 2rem;
   bottom: 2rem;
@@ -225,7 +214,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 40.5vh;
+  height: 42%;
 }
 .certifications{
   display: flex;

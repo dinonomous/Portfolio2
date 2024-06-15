@@ -41,9 +41,9 @@ document.addEventListener("mousemove", e => {
     });
 
     if (animation) {
-        mask.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - masksize / 2}px ${(e.pageY - scrollAmount - masksize / 2)-amountScrolled}px;`);
+        mask.setAttribute("style", `mask-size: ${masksize }px !important; mask-position: ${e.pageX - 15 - masksize / 2}px ${(e.pageY - 13 - scrollAmount - masksize / 2)-amountScrolled}px;`);
     } else {
-        mask.setAttribute("style", `mask-size: ${masksize}px !important; mask-position: ${e.pageX - masksize / 2}px ${(e.pageY - scrollAmount - masksize / 2)-amountScrolled}px;`);
+        mask.setAttribute("style", `mask-size: ${masksize }px !important; mask-position: ${e.pageX - 15 - masksize / 2}px ${(e.pageY - 13 - scrollAmount - masksize / 2)-amountScrolled}px;`);
     }
 });
 

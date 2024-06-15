@@ -66,6 +66,7 @@
     <link rel="stylesheet" href="./css/page_6.css" />
     <link rel="stylesheet" href="./css/page_7.css" />
     <link rel="stylesheet" href="./css/custom_card.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
   </head>
   <body>
     <div id="root">
@@ -176,7 +177,7 @@
                 </div>
                 <h2>Web Developer</h2>
                 <div class="patterns_circle circle_text">
-                  <img src="assets/circlePattern.svg" alt="circle pattern" />
+                  <img src="assets/circlePattern.svg" alt="circle pattern" style="position: absolute; left: 10rem;top: 10rem;"/>
                 </div>
               </div>
               <div class="page1_above_photo">
@@ -190,28 +191,33 @@
                 </div>
               </div>
               <div class="line"></div>
-            </div>
-            <div
-              class="page1 mask1"
+              <div class="page1_above mask1"
               style="
                 mask-position: 0 0;
                 -webkit-mask-position: 0 0;
                 transition: mask-position 0.1s ease-out,
-                  -webkit-mask-position 0.1s ease-out;
-              "
-            >
-              <div class="page1_above_mask">
-                <div
-                  class="page1_text mask_text"
-                  onmouseenter="maskExpand()"
-                  onmouseleave="maskShrink()"
-                >
+                -webkit-mask-position 0.1s ease-out;
+                position: absolute;
+              ">
+                <div class="page1_text" onmouseenter="maskExpand()" onmouseleave="maskShrink()">
                   <div class="main_text">
-                    <h1>DINONOMOUS</h1>
+                    <h1>DINONOMOUS <span class="invisible-text">NAGUBOTu</span></h1>
                   </div>
-                  <h2>Cloud Engineer</h2>
+                  <h2>Cloud Architect</h2>
+                  <div class="patterns_circle circle_text">
+                    <img src="assets/circlePattern.svg" alt="circle pattern" style="position: absolute; left: 10rem;top: 10rem;"/>
+                  </div>
                 </div>
-                <div class="page1_above_photo_mask"></div>
+                <div class="page1_above_photo">
+                  <img
+                    src="assets/photoFrame.png"
+                    alt="dinesh"
+                    class="page1_above_photo_dinesh_photo"
+                  />
+                  <div class="patterns_circle">
+                    <img src="assets/circlePattern.svg" alt="circle pattern" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -251,6 +257,7 @@
                     class="custom-container certifications"
                     onmouseenter="divein('dive')"
                     onmouseleave="diveout()"
+                    style="padding: 0;"
                   >
                     <h3>Certifications</h3>
                     <div class="container_bottom">
@@ -263,6 +270,7 @@
                     onmouseenter="divein('download')"
                     onmouseleave="diveout()"
                     id="downloadBtn"
+                    style="padding: 0;"
                   >
                     <h3>Recruiter's CV</h3>
                     <div class="container_bottom">
