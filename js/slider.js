@@ -89,6 +89,8 @@ function setMainProject() {
     };
   }
 
+if (window.innerWidth >= 885) {
+
 function mainMouseEnter(){
     gsap.to(arrayParent, {
         zIndex: 0,
@@ -118,6 +120,14 @@ function mainMouseLeave(){
         scale: 1,
         duration: 0.3,
     })
+}
+
+} else {
+  main.mainMouseEnter = null;
+  main.mainMouseLeave = null;
+  mainProjectTextArea.style.opacity = 1;
+  arrayParent.style.transform = 'scale(1)';
+  main.style.transform = 'scale(1)';
 }
 
 function updateCurrentSelected(increment) {

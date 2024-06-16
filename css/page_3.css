@@ -137,6 +137,9 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+bottom: 0rem;
+left: 0rem;
 }
 .main_video{
     object-fit: contain;

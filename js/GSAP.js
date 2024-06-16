@@ -74,36 +74,87 @@ function slideprloader(){
 
 let amountScrolled = 0;
 
-const tb = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".page_2_parent",
-    scroller: "body",
-    markers: false,
-    start: "top calc(57% + 6rem)",
-    end: "top 30%",
-    snap: 1,
-    pin: ".page1page2parent",
-    scrub: 2,
-    onUpdate: self => {
-      const progress = self.progress;
-      amountScrolled = self.scroll();
-      console.log('Amount Scrolled:', amountScrolled);
 
-      if (progress === 1) {
-        animation = false;
-      } else {
-        animation = true;
+
+// Function to create scroll trigger for large screens
+function createLargeScreenScrollTrigger() {
+  const tb = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page_2_parent",
+      scroller: "body",
+      markers: false,
+      start: "top calc(57% + 6rem)",
+      end: "top 30%",
+      snap: 1,
+      pin: ".page1page2parent",
+      scrub: 2,
+      onUpdate: self => {
+        const progress = self.progress;
+        const amountScrolled = self.scroll();
+        console.log('Amount Scrolled:', amountScrolled);
+
+        if (progress === 1) {
+          animation = false;
+        } else {
+          animation = true;
+        }
       }
     }
-  }
+  });
+
+  tb.to(".page_2", {
+    x: "-50%",
+  })
+  .call(() => {
+    console.log("Animation complete!");
+  });
+}
+
+// Function to create scroll trigger for small screens
+function createSmallScreenScrollTrigger() {
+  const tbSmallScreen = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page_2_parent",
+      scroller: "body",
+      markers: false,
+      start: "top 0",
+      end: "top -100vh",
+      snap: 1,
+      pin: ".page1page2parent",
+      scrub: 2,
+      onUpdate: self => {
+        const progress = self.progress;
+        const amountScrolled = self.scroll();
+        console.log('Amount Scrolled:', amountScrolled);
+
+        if (progress === 1) {
+          animation = false;
+        } else {
+          animation = true;
+        }
+      }
+    }
+  });
+
+  tbSmallScreen.to(".page_2", {
+    x: "-50%",
+  })
+  .call(() => {
+    console.log("Animation complete!");
+  });
+}
+
+// Create matchMedia instance
+const mm = gsap.matchMedia();
+
+// Large screen setup
+mm.add("(min-width: 885px)", () => {
+  createLargeScreenScrollTrigger();
 });
 
-
-tb.to(".page_2", {
-  x: "-50%",
-})
-.call(() => {
-  console.log("Animation complete!");
+// Small screen setup
+mm.add("(max-width: 884px)", () => {
+  createSmallScreenScrollTrigger();
 });
 
 gsap.from(page3Animate, {

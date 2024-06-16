@@ -17,13 +17,102 @@
     }
     .page1_above{
         flex-direction: column;
-        height: 100% !important;
+        height: 80% !important;
     }
     .page1{
         height: 100vh !important;
     }
     .page1page2parent{
         height: 200vh !important;
+    }
+    .page1_above{
+        height: 100% !important;
+        padding: 5rem 0rem 5rem 0rem;
+    }
+    .page1_above_photo{
+        height: 50% !important;
+    }
+    .page_2_parent{
+        margin-top: 1rem !important;
+        height: 100vh !important;
+    }
+    .line{
+        bottom: 0px;
+    }
+    .page_2{
+        padding-top: 2rem;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+    .page1_bellow_parent{
+        height: 90%;
+    }
+    .page1_bellow{
+        flex-direction: column;
+    }
+    .custom-container{
+        width: 100%;
+    }
+    .project{
+        text-align: center;
+        height: 50% !important;
+    }
+    .project h1{
+        font-size: 6rem !important;
+    }
+    .skills{
+        text-align: center;
+        height: 25% !important;
+    }
+    .skills h1{
+        font-size: 6rem !important;
+    }
+    .page1_bellow_right{
+        height: 25% !important;
+        flex-direction: row;
+        width: 100% !important;
+    }
+    .certifications{
+        height: 100% !important;
+        width: 50% !important;
+    }
+    .resume{
+        height: 100% !important;
+        width: 50% !important;
+    }
+    .page2{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .card_array_parent{
+        display: none;
+    }
+    .certificate_group{
+        flex-direction: column !important;
+        width: 100%;
+        gap: 2rem;
+    }
+    .card{
+        width: 100% !important;
+        height: fit-content !important;
+        padding-bottom: 4rem !important;
+    }
+    #page6{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #page7{
+        flex-direction: column !important;
+    }
+    .resume_experiance , .resume_education{
+        min-width: 100% !important;
+    }
+    .contact-right{
+        width: 100%;
+        flex-direction: row !important;
+        flex-wrap: wrap;
     }
   }
   @media screen and (max-height: 610px){
