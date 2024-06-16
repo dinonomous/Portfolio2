@@ -113,6 +113,59 @@
         width: 100%;
         flex-direction: row !important;
         flex-wrap: wrap;
+        padding: 0rem 1rem 0rem 1rem !important;
+
+    }
+    .page_2_text{
+        width: 100% !important;
+    }
+    .project_textarea {
+        min-height: 50%;
+        height: fit-content;
+        min-width: fit-content;
+    }
+    .Projectname h1 {
+        font-size: 2.3rem !important;
+    }
+    .Project_skills h2 {
+        font-size: 1.4rem !important;
+    }
+    .project_despription p {
+        font-size: 1.2rem !important;
+    }
+    .main_video {
+        object-position: top;
+    }
+    .skill_card h1 {
+        font-size: 2.3rem !important;
+    }
+    .skill_card h2 {
+        font-size: 1.2rem !important;
+        text-shadow: none !important;
+    }
+    .page5wraper {
+        padding: 1rem 0rem 1rem 0rem !important;
+    }
+    #page7 {
+        padding: 0rem !important;
+    }
+    .contact-info {
+        flex-direction: column !important;
+    }
+    .textarea {
+        margin: 1rem 0rem 0rem 0rem !important;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .topnav{
+        left: 30% !important;
+    }
+    .custom-container h3{
+        font-size: 1.8rem !important;
+    }
+    .page_2_text{
+        width: 100% !important;
     }
   }
   @media screen and (max-height: 610px){
@@ -129,3 +182,6 @@
         font-size: 1rem;
     }
   }
+  @media (pointer:coarse) {
+    
+    }
