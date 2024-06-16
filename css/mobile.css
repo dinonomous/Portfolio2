@@ -198,6 +198,9 @@
         width: 100% !important;
         min-width: 300px !important;
     }
+    .prloader > img{
+        width: 40% !important;
+    }
   }
   @media screen and (max-height: 610px){
     .page2 h4{
@@ -211,6 +214,18 @@
     }
     .project_despription p{
         font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .page_2_text h4 {
+        font-size: 1.2rem !important;
+    }
+    .body-hedding h3{
+        font-size: 1.3rem;
+    }
+    .body-content h4{
+        font-size: 1rem;
+
     }
   }
   @media (pointer:coarse) {
