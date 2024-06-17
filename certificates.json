@@ -27,6 +27,23 @@
       "group": "group2",
       "certificates": [
         {
+          "imgSrc": "./assets/images/Personalcertificates/altrxy foundation.png",
+          "title": "Alteryx Foundational Micro-Credential",
+          "text": "have a basic understanding of data analytics concepts and key Designer functionality.I can identify data types and data formats as well as recognize the foundational elements of Alteryx Designer and associate the most used tools with their functionality.",
+          "verify": "https://www.credly.com/badges/65f2c9d5-8361-402b-b027-c5b4874e850d/public_url"
+        },
+        {
+          "imgSrc": "./assets/images/Personalcertificates/alrxy core.png",
+          "title": "Alteryx Designer Core Certification",
+          "text": "thorough understanding of the Alteryx Designer environment.I am able to use the core toolset to clean, prepare, blend, parse, transform, and analyze data.",
+          "verify": "https://www.credly.com/badges/8cf504a0-77ae-4e3a-acdf-55a018875fc3/public_url"
+        }
+      ]
+    },
+    {
+      "group": "group3",
+      "certificates": [
+        {
           "imgSrc": "./assets/images/Personalcertificates/AWSCloudPractitioner.png",
           "title": "AWS Academy: Cloud Foundations",
           "text": "Successfully Completed: 20 Hours. Demonstrated a strong foundation in cloud computing concepts and a comprehensive understanding of the AWS Cloud platform through achieving the AWS Certified Cloud Practitioner certification.",
@@ -47,7 +64,7 @@
       ]
     },
     {
-      "group": "group3",
+      "group": "group4",
       "certificates": [
         {
           "imgSrc": "./assets/images/Personalcertificates/CPP.png",
@@ -70,7 +87,7 @@
       ]
     },
     {
-      "group": "group4",
+      "group": "group5",
       "certificates": [
         {
           "imgSrc": "./assets/images/Personalcertificates/figma design.png",
