@@ -16,11 +16,12 @@
           "verify": "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=6015d95bdb9c52e13c26d92c79b1d8f5"
         },
         {
-          "imgSrc": "./assets/images/Personalcertificates/AWSAIML.png",
-          "title": "AWS Academy: Machine Learning Foundations",
-          "text": "Successfully Completed: 20 Hours . This experience ignited my passion for Artificial Intelligence. I'm eager to keep learning and growing in this exciting space!",
-          "verify": "https://www.credly.com/badges/fbc3ed6f-8672-4c80-b24e-36c9259e80b4/public_url"
+          "imgSrc": "./assets/images/Personalcertificates/Alterxy AICTE.png",
+          "title": "AICTE: Data Analytics Process Automation Virtual Internship",
+          "text": "Successfully Completed: 10 weeks (April - June 2024). thorough understanding of the Alteryx Designer environment.I am able to use the core toolset to clean, prepare, blend, parse, transform, and analyze data.",
+          "verify": "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=cc7fe6d7107b35f1f49a139b9dd54c69"
         }
+        
       ]
     },
     {
@@ -56,10 +57,10 @@
           "verify": "https://www.credly.com/badges/d69da1e4-1ddd-4ebd-9c6a-6a900955a153/public_url"
         },
         {
-          "imgSrc": "./assets/images/Personalcertificates/implement-load-balancing-on-compute-engine-skill-ba.png",
-          "title": "Google Cloud Implement Load Balancing on Compute Engine",
-          "text": "Successfully implemented a basic HTTP(S) Load Balancer on Google Cloud Platform's Compute Engine to distribute traffic across a pool of virtual machines, improving application scalability and high availability.",
-          "verify": "https://www.credly.com/badges/6d8c43b2-163e-46ba-96cf-f0a600d69671/public_url"
+          "imgSrc": "./assets/images/Personalcertificates/AWSAIML.png",
+          "title": "AWS Academy: Machine Learning Foundations",
+          "text": "Successfully Completed: 20 Hours . This experience ignited my passion for Artificial Intelligence. I'm eager to keep learning and growing in this exciting space!",
+          "verify": "https://www.credly.com/badges/fbc3ed6f-8672-4c80-b24e-36c9259e80b4/public_url"
         }
       ]
     },
@@ -89,6 +90,12 @@
     {
       "group": "group5",
       "certificates": [
+        {
+          "imgSrc": "./assets/images/Personalcertificates/implement-load-balancing-on-compute-engine-skill-ba.png",
+          "title": "Google Cloud Implement Load Balancing on Compute Engine",
+          "text": "Successfully implemented a basic HTTP(S) Load Balancer on Google Cloud Platform's Compute Engine to distribute traffic across a pool of virtual machines, improving application scalability and high availability.",
+          "verify": "https://www.credly.com/badges/6d8c43b2-163e-46ba-96cf-f0a600d69671/public_url"
+        },
         {
           "imgSrc": "./assets/images/Personalcertificates/figma design.png",
           "title": "Figma Desi",
