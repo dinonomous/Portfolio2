@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 1;
 }
 #page3{
     display: flex;
@@ -27,19 +27,18 @@
     z-index: 1;
 }
 .custom_card {
-  background-image: url("https://random.imagecdn.app/500/150");
   background-repeat: no-repeat;
   background-size: cover;
   object-position: center center;
   width: var(--side) !important;
   height: var(--side) !important;
   border-radius: 20px;
-  padding: 10px;
   flex-grow: 0; 
   flex-shrink: 0;
   z-index: 1;
 }
 .card_array_parent{
+    overflow-y: hidden;
     position: absolute;
     bottom: -2rem;
     right: -1rem;
@@ -56,6 +55,7 @@
 
 }
 .card_array {
+    overflow-y: hidden;
     position: relative;
   height: fit-content;
   display: flex;
@@ -149,8 +149,8 @@ left: 0rem;
     border-radius: 26px;
 }
 .card-video{
-    height: calc(var(--side) - 20px);
-    width: calc(var(--side) - 20px);
+    height: calc(var(--side) - 2px);
+    width: calc(var(--side) - 2px);
     object-fit: cover;
     border-radius: inherit;
 }

@@ -86,6 +86,7 @@
         <button class="prloader-button" onclick="slideprloader()">dive</button>
       </div>
       <div class="cursor_pointer"></div>
+      <div class="scrolltotop" onclick="scrolltotop()" onmouseenter="divein('Scroll up')" onmouseleave="diveout()"></div>
       <div class="topnav">
         <div
           class="horizontal-line topline"
@@ -150,24 +151,8 @@
             "
           />
         </a>
-        <div
-          class="music"
-          onclick="playpause(this)"
-          onmouseenter="divein('Play/Pause')"
-          onmouseleave="diveout()"
-        >
-          <img
-            src="./assets/vinyl-record-svgrepo-com.svg"
-            alt="Play/Pause"
-            srcset=""
-            style="position: static"
-          />
-          <audio id="musicControl">
-            <source src="./assets/music/ahinunuga.mp4" type="audio/mp4" />
-          </audio>
-        </div>
       </div>
-      <div class="page1page2parent">
+      <div class="page1page2parent" id="page1id">
         <div class="page_1">
           <div class="page1">
             <div class="page1_above">

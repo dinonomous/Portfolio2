@@ -98,7 +98,6 @@ h2 {
   font-size: 3rem;
   font-family: "Baumans", system-ui;
   z-index: 1;
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
 h3 {
   font-size: 2.5rem;
@@ -242,4 +241,23 @@ body::-ms-scrollbar-thumb {
 
 body::-ms-scrollbar-thumb:hover {
   background: var(--red);
+}
+
+.scrolltotop{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #02020b;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  content: "";
+  z-index: 9;
+  background-image: url("../assets/alt-arrow-up-svgrepo-com.svg");
+  padding: 1rem;
+  background-position: center center;
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
 }
