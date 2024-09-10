@@ -91,6 +91,29 @@
       "group": "group5",
       "certificates": [
         {
+          "imgSrc": "./assets/images/Personalcertificates/RedbullHackathon.jpg",
+          "title": "REDBULL BASEMENT HACKATHON",
+          "text": "I participated in the REDBULL BASEMENT HACKATHON, held on 31st August, where we developed an innovative website that detects drowsiness in real-time. The system uses live video capture and a Python-based machine learning model to track the iris and assess signs of drowsiness. This project demonstrates the integration of computer vision and AI for practical applications like driver safety monitoring.",
+          "verify": null
+        },
+        {
+          "imgSrc": "./assets/images/Personalcertificates/PairHackathon.jpg",
+          "title": "HACKATHON PAIR PROGRAMMING",
+          "text": "Our team developed a Python backend model that extracts both text and images from PDFs using text recognition. The extracted data is then organized and categorized into Excel format for easy reference and management.",
+          "verify": null
+        },
+        {
+          "imgSrc": "./assets/images/Personalcertificates/HealthAIConclave.jpg",
+          "title": "SRM ACM HEALTH CONCLAVE",
+          "text": "At the SRM ACM Health Conclave, we proposed an innovative EEG device integrated with AI technology. This device aims to map spatial images and detect anomalies, offering a cost-effective alternative to CT and MRI scans for post-checkup diagnostics.",
+          "verify": null
+        }
+      ]
+    },
+    {
+      "group": "group6",
+      "certificates": [
+        {
           "imgSrc": "./assets/images/Personalcertificates/implement-load-balancing-on-compute-engine-skill-ba.png",
           "title": "Google Cloud Implement Load Balancing on Compute Engine",
           "text": "Successfully implemented a basic HTTP(S) Load Balancer on Google Cloud Platform's Compute Engine to distribute traffic across a pool of virtual machines, improving application scalability and high availability.",
